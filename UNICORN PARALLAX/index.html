@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UNICORN PARALLAX</title>
+    <script src="parallax.js"></script>
+    <link rel="stylesheet" href="index-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="navlist">
+                    <p><a href="#">HOME</a></p>
+                    <p><a href="#">ABOUT</a></p>
+                    <p><a href="#">WHERE TO FIND</a></p>
+                </div>
+            </div>
+            <ul id="scene">
+                <li class="layer" data-depth="0.7"><img src="images/filledpolygon.png" alt="image"></li>></li>
+                <li class="layer" data-depth="-0.1"><img src="images/lettercuts.png" alt="image"></li>></li>
+                <li class="layer" data-depth="-0.05"><img src="images/unicorntext.png" alt="image"></li>></li>
+                <li class="layer" data-depth="0.15"><img src="images/polygons.png" alt="image"></li>></li>
+                <li class="layer" data-depth="0.05"><img src="images/unicorn.png" alt="image"></li>></li>
+                <li class="layer" data-depth="0.09"><img src="images/arereal.png" alt="image"></li>></li>
+            </ul>
+            <script>
+                var scene = document.getElementById('scene');
+                var parallax = new Parallax(scene);
+            </script>
+        </div>
+    </main>
+</body>
+</html>
